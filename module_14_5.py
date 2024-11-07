@@ -184,6 +184,7 @@ async def get_product_buying(call):
 # Заполнение таблицы SQL данными
 @dp.message_handler(text=['Купить'])
 async def get_all_products(message):
+    os.chdir('..')
     global get_index, get_title, get_price, get_description, get_photo
     print(f'\033[31mНаполнение таблицы данными\033[0m')
     text = 'Выберите товар:'
