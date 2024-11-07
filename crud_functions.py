@@ -1,6 +1,6 @@
 import sqlite3
 
-file_name = 'Products.db'
+file_name = './Products.db'
 fill_table = ''
 user_table = ''
 base_names = 'Products'
